@@ -8,6 +8,7 @@
     tools:context=".RelativeLinearLayoutActivity">
 
     <LinearLayout
+        android:id="@+id/ly1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
@@ -28,45 +29,79 @@
             android:text="30"
             android:textSize="30dp" />
 
-        <Button
-            android:id="@+id/button4"
+        <LinearLayout
+            android:id="@+id/ly2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Button" />
+            android:orientation="horizontal"
+            android:weightSum="4">
 
-        <Button
-            android:id="@+id/button5"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Button" />
+            <Button
+                android:id="@+id/button7"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="C" />
 
-        <EditText
-            android:id="@+id/editTextTextPersonName2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textPersonName" />
+            <Button
+                android:id="@+id/button8"
+                android:layout_width="0dpt"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="( )" />
 
-        <Button
-            android:id="@+id/button6"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Button" />
+            <Button
+                android:id="@+id/button9"
+                android:layout_width="0p"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="%" />
 
-        <EditText
-            android:id="@+id/editTextTextPersonName"
+            <Button
+                android:id="@+id/button10"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="<<" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ly3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textPersonName" />
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <Button
+                android:id="@+id/button11"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="7" />
+
+            <Button
+                android:id="@+id/button12"
+                android:layout_width="0dpt"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="8" />
+
+            <Button
+                android:id="@+id/button13"
+                android:layout_width="0p"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="x" />
+
+            <Button
+                android:id="@+id/button14"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="<<" />
+        </LinearLayout>
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@+id/button"
-        android:orientation="horizontal"
-        android:weightSum="5" />
+
 
 
 </RelativeLayout>
